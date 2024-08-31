@@ -1,5 +1,6 @@
 ﻿using Core.DateAccess;
 using Entities.Concrete;
+using Entities.DTOs;
 
 namespace DataAccess.Abstract
 {
@@ -13,5 +14,7 @@ namespace DataAccess.Abstract
         Product GetById(int id);
         List<Product> GetAllByCategory(int categoryId);
         */
+
+        List<ProductDetailDto> GetProductDetails();
     }
 }
